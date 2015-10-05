@@ -26,6 +26,8 @@ PHP + MySQL + AlchemyAPI による簡易画像アップローダーサンプル
 
 - uptest.html : アップロードテスト用
 
+- upload.lua : LUA によるアップロードスクリプト
+
 ## 開発者
 
 - K.Kimura ( dotnsf@gmail.com ), all rights reserved.
