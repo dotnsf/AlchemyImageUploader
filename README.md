@@ -28,7 +28,7 @@ PHP + MySQL + AlchemyAPI による簡易画像アップローダーサンプル
 
 - upload.lua : LUA によるアップロードスクリプト
 
-## 使い方
+## 準備
 
 - AlchemyAPI のキーを取得
  * http://www.alchemyapi.com/api/register.html
@@ -40,6 +40,8 @@ PHP + MySQL + AlchemyAPI による簡易画像アップローダーサンプル
 - HTML, PHP ファイル全てを PHP アプリケーションサーバーのドキュメントルートにデプロイ
  * IBM Bluemix であれば HTML, PHP ファイル全てを PHP ランタイムにプッシュ
 
+- アプリケーションサーバー上の createtables.php をブラウザから実行して、必要なテーブルを作成する
+
 - LUA ファイルを FlashAir 内にコピー
  * 例えば FlashAir 内の \lua\upload.lua にコピー
  * upload.lua ファイル内のアップロード先サーバー（L.26）を実際のアプリケーションサーバーになるよう書き換え
@@ -48,6 +50,16 @@ PHP + MySQL + AlchemyAPI による簡易画像アップローダーサンプル
  * APPMODE = 5 を指定（WiFi 子機）
  * APPSSID, APPNETWORKKEY で SSID とパスフレーズを指定
  * LUA_SD_EVENT=/lua/upload.lua を追加
+
+## 使い方
+
+- ブラウザでアプリケーションサーバーのドキュメントルートにアクセス（何も画像が登録されていないことを確認）
+
+- SD カードに新しい画像をコピー（新しく撮影したイメージ）
+
+- 追加された画像が自動的にサーバーに転送され、AlchemyAPI でタグ付けされる
+
+- 改めてブラウザでアプリケーションサーバーのドキュメントルートにアクセスすると、追加した画像が一覧に含まれていて、クリックするとメタ情報と一緒に表示されることを確認する。
 
 ## 開発者
 
