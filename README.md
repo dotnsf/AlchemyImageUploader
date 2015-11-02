@@ -31,6 +31,10 @@ PHP + MySQL + AlchemyAPI による簡易画像アップローダーサンプル
 
 - upload.lua : LUA によるアップロードスクリプト
 
+- composer.json : IBM Bluemix 用
+
+- .bp-config/options.json : IBM Bluemix 用
+
 ## 準備
 
 - AlchemyAPI のキーを取得
