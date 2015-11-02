@@ -41,7 +41,7 @@ PHP + MySQL + AlchemyAPI による簡易画像アップローダーサンプル
 
 - credentials.php ファイル内の MySQL 接続情報および AlchemyAPI のキー情報を更新
 - HTML, PHP ファイル全てを PHP アプリケーションサーバーのドキュメントルートにデプロイ
- * IBM Bluemix であれば HTML, PHP ファイル全てを PHP ランタイムにプッシュ
+ * IBM Bluemix であれば、HTML, PHP ファイル全てを PHP ランタイムにプッシュ
 
 - アプリケーションサーバー上の createtables.php をブラウザから実行して、必要なテーブルを作成する
 
@@ -55,6 +55,8 @@ PHP + MySQL + AlchemyAPI による簡易画像アップローダーサンプル
  * LUA_SD_EVENT=/lua/upload.lua を追加
 
 ## 使い方
+
+- 最初に一回だけ createtables.php をブラウザから呼び出して実行
 
 - ブラウザでアプリケーションサーバーのドキュメントルートにアクセス（何も画像が登録されていないことを確認）
 
