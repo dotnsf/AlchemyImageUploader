@@ -43,7 +43,7 @@ PHP + MySQL + AlchemyAPI による簡易画像アップローダーサンプル
 - LAMP 環境を用意
  * IBM Bluemix であれば PHP ランタイムと ClearDB サービスをバインドする
 
-- credentials.php ファイル内の MySQL 接続情報および AlchemyAPI のキー情報を更新
+- credentials.php ファイル内の MySQL 接続情報および AlchemyAPI のキー情報を更新（その際にBOMを付けずに PHP ファイルを保存すること。したがって Windows のメモ帳不可）
 - HTML, PHP ファイル全てを PHP アプリケーションサーバーのドキュメントルートにデプロイ
  * IBM Bluemix であれば、HTML, PHP ファイル全てを PHP ランタイムにプッシュ
 
